@@ -1,0 +1,32 @@
+<%- include header %>
+<style>
+    .login-form {
+        margin-top: 100px;
+    }
+</style>
+<div class="am-g content">
+    <div class="am-u-lg-6 am-u-md-8 am-u-sm-centered login-form">
+        <h3><%- title %> <span class="am-badge am-badge-danger am-text-lg"><%- error %></span><span class="am-badge am-badge-success am-text-lg"><%- success %></span></h3>
+        <hr>
+        <form method="post" class="am-form" action="/login">
+            <label for="name">用户名:</label>
+            <input type="text" name="name" id="email" value="">
+            <br>
+            <label for="password">密码:</label>
+            <input type="password" name="password" id="password" value="">
+            <br>
+            <label for="remember-me">
+                <input id="remember-me" type="checkbox">
+                记住密码
+            </label>
+            <br />
+            <div class="am-cf">
+                <input type="submit" name="" value="登 录" class="am-btn am-btn-primary am-btn-sm am-fl">
+                <input type="submit" name="" value="忘记密码 ^_^? " class="am-btn am-btn-default am-btn-sm am-fr">
+            </div>
+        </form>
+        <br>
+    </div>
+</div>
+
+<%- include footer %>
